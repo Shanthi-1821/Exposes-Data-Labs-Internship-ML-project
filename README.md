@@ -13,19 +13,27 @@ Link: https://www.kaggle.com/datasets/carnegiecylab/keystroke-dynamics-benchmark
 
 ---
 
-**Tools & Libraries Used**
+**the libraries used**
 
-Python 3
+**Machine Learning & Data Handling**
 
-Scikit-learn
+1. **pandas** – for handling and analyzing the dataset (`import pandas as pd`)
+2. **numpy** – for numerical operations (`import numpy as np`)
+3. **scikit-learn** (`sklearn`) – for ML model and evaluation:
 
-Pandas, NumPy
+   * `train_test_split` – to split data into train/test
+   * `RandomForestClassifier` – ML model
+   * `accuracy_score` – to check model accuracy
+   * `classification_report`, `confusion_matrix` *(if used)*
 
-Cryptography (Fernet)
+**Security & Encryption**
 
-Matplotlib
+4. **cryptography** – for message encryption/decryption (`from cryptography.fernet import Fernet`)
+5. **hashlib** – to generate SHA-256 hash of a message
 
-Google Colab
+**Visualization**
+
+**matplotlib.pyplot** – to plot feature importance chart (`import matplotlib.pyplot as plt`)
 
 ---
 
