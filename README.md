@@ -1,11 +1,11 @@
-Overview
+**Overview**
 
 This project uses a Machine Learning model to authenticate users based on typing behavior and allows only authenticated users to encrypt and send messages. The messages are securely decrypted by the receiver. Unauthorized users are blocked from accessing the encryption process.
 
 
 ---
 
-Dataset Used
+**Dataset Used**
 
 Dataset Source: Kaggle (Keystroke Dynamics)
 
@@ -13,7 +13,7 @@ Link: https://www.kaggle.com/datasets/carnegiecylab/keystroke-dynamics-benchmark
 
 ---
 
-Tools & Libraries Used
+**Tools & Libraries Used**
 
 Python 3
 
@@ -29,7 +29,7 @@ Google Colab
 
 ---
 
-How It Works
+**How It Works**
 
 Data Preprocessing: Clean the dataset, label users as real or fake
 
@@ -45,7 +45,7 @@ Hashing (optional): Ensure message integrity
 
 ---
 
-ML Model Details
+**ML Model Details**
 
 Algorithm: Random Forest Classifier
 
@@ -57,7 +57,7 @@ Accuracy: ~100% (on test set)
 
 ---
 
-Demo
+**Demo**
 
 Run the full notebook on Google Colab
 
@@ -69,7 +69,7 @@ View real/fake user authentication in action
 
 ---
 
-Key Functionalities
+**Key Functionalities**
 
 Upload Dataset (.csv) from local machine
 
@@ -85,7 +85,7 @@ Decrypt Message on receiver side if authenticated
 
 ---
 
-Dataset Format
+**Dataset Format**
 
 Columns: subject, sessionIndex, rep, H.period, DD.period.t, UD.period.t, etc.
 
@@ -93,7 +93,7 @@ Real user label is set based on the subject column (e.g., 's027' is real, others
 
 ---
 
-Future Enhancements
+**Future Enhancements**
 
 Real-time user typing input capture (instead of static data)
 
@@ -103,7 +103,7 @@ Add hashing or digital signature for integrity verification
 
 ---
 
-Sample Outputs
+**Sample Outputs**
 
 User Authenticated. Proceeding to encrypt message...
 
